@@ -38,12 +38,14 @@ contract WETH9 {
     function deposit() public payable {
         balanceOf[msg.sender] += msg.value;
         Deposit(msg.sender, msg.value);
+        Transfer(address(0), msg.sender, msg.value);
     }
     function withdraw(uint wad) public {
         require(balanceOf[msg.sender] >= wad);
         balanceOf[msg.sender] -= wad;
         msg.sender.transfer(wad);
         Withdrawal(msg.sender, wad);
+        Transfer(msg.sender, address(0), wad);
     }
 
     function totalSupply() public view returns (uint) {
