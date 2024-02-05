@@ -16,6 +16,6 @@ Here's an overlay RPC URL created with [this example patch](https://github.com/c
 
 `export WEB3_PROVIDER="https://weth-overlay.dyrpc.network"`
 
-## Read more
+## API docs
 https://hackmd.io/@crebsy/H1jO9onua
 
