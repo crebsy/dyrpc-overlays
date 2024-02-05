@@ -14,7 +14,7 @@ With [dyRPC](https://beta.dyrpc.network)-overlays, anyone can add a modified ver
 
 Here's an overlay RPC URL created with [this example patch](https://github.com/crebsy/dyrpc-overlays/commit/7f8fd586f7c7ebe037ee791dd271cc196b6753bd) that you can use directy in your web3 client app for doing ad-hoc range queries on the WETH contract.
 
-[https://weth-overlay.dyrpc.network](https://weth-overlay.dyrpc.network)
+`export WEB3_PROVIDER="https://weth-overlay.dyrpc.network"`
 
 ## Read more
 https://hackmd.io/@crebsy/H1jO9onua
